@@ -40,7 +40,8 @@ st.write("### 👤 Your Choice")
 choice_label = st.radio(
     "Choose one:",
     ["Select...", "Rock (0)", "Paper (1)", "Scissors (2)"],
-    key="user_rps"
+    key="user_rps",
+    index=0
 )
 
 # It's working by user selection.
