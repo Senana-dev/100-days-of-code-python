@@ -84,5 +84,7 @@ if choice_label != "Select...":
 
 # 🔥 6. Game reset
     # Go back to select
-    if st.button("🔄 Play Again (Reset Game)"):
+    if st.button("🔄 You want to try again?"):
+        if "user_rps" in st.session_state: # remove user's previous selection.
+            del st.session_state["user_rps"]
         st.rerun()
