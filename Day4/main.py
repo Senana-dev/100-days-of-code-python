@@ -73,7 +73,7 @@ if choice_label != "Select...":
         st.balloons()  # ballons
     elif your_choice == 2 and my_choice == 0:
         st.error("😭 You lose! Better luck next time.")
-        st.image("https://media.giphy.com/media/l0IxYWDltdHEqv9f2/giphy.gif", use_container_width=True)
+        st.image("https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3end5MG00OXBwc2d3eTBsanlraGRtNGdzaTcxeGpqejg2NnR6N3Y0cCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/fXnRObM8Q0RkOmR5nf/giphy.gif", use_container_width=True)
     elif your_choice < my_choice:
         st.error("😭 You lose! Better luck next time.")
         st.image("https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ejBla2VqZW5jNjl4Nm80N3oxcW4wYmZwdm90YmJraTk4OHhrYmI2ciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ZRcYyl26ZrahzWShDr/giphy.gif", use_container_width=True)
@@ -82,10 +82,3 @@ if choice_label != "Select...":
         st.balloons()
     elif your_choice == my_choice:
         st.info("🤝 It's a draw! Play again.")
-
-# 🔥 6. Game reset
-    # Go back to select
-    if st.button("🔄 You want to try again?"):
-        if "user_rps" in st.session_state: # remove user's previous selection.
-            st.session_state["user_rps"] = "Select..."
-        st.rerun()
