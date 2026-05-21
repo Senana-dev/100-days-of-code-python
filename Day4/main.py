@@ -39,7 +39,7 @@ st.markdown("---")
 st.write("### 👤 Your Choice")
 choice_label = st.radio(
     "Choose one:",
-    ["Select...", "Rock (0)", "Paper (1)", "Scissors (2)"],
+    ["Select...", "Rock✊", "Paper✋", "Scissors✌️"],
     key="user_rps",
     index=0
 )
