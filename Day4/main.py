@@ -87,5 +87,5 @@ if choice_label != "Select...":
     # Go back to select
     if st.button("🔄 You want to try again?"):
         if "user_rps" in st.session_state: # remove user's previous selection.
-            del st.session_state["user_rps"]
+            st.session_state["user_rps"] = "Select..."
         st.rerun()
