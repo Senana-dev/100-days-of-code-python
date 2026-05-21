@@ -1,6 +1,5 @@
 import streamlit as st
 import random
-st.title("✊✌️✋Rock Paper Scissors!")
 
 rock = '''
     _______
@@ -76,7 +75,7 @@ if choice_label != "Select...":
         st.image("https://media.giphy.com/media/l0IxYWDltdHEqv9f2/giphy.gif", use_container_width=True)
     elif your_choice < my_choice:
         st.error("😭 You lose! Better luck next time.")
-        st.image("https://media.giphy.com/media/l0IxYWDltdHEqv9f2/giphy.gif", use_container_width=True)
+        st.image("https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ejBla2VqZW5jNjl4Nm80N3oxcW4wYmZwdm90YmJraTk4OHhrYmI2ciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ZRcYyl26ZrahzWShDr/giphy.gif", use_container_width=True)
     elif your_choice > my_choice:
         st.success("🎉 You win! Awesome!")
         st.balloons()
