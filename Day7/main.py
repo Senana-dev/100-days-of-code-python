@@ -1,8 +1,8 @@
 import streamlit as st
 import random
 
-from hangman_art import stages, logo
-from hangman_words import word_list
+from Day7.hangman_art import stages, logo
+from Day7.hangman_words import word_list
 
 # 1. title and logo
 st.title("🪓 Hangman Game")
