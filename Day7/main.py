@@ -1,8 +1,15 @@
 import streamlit as st
 import random
+import sys
+import os
 
-from Day7.hangman_art import stages, logo
-from Day7.hangman_words import word_list
+# 🔥 file path
+current_dir = os.path.dirname(os.path.abspath(__file__))
+if current_dir not in sys.path:
+    sys.path.append(current_dir)
+
+from hangman_art import stages, logo
+from hangman_words import word_list
 
 # 1. title and logo
 st.title("🪓 Hangman Game")
